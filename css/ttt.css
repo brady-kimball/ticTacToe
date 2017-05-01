@@ -6,6 +6,10 @@ html, body, figure, figcaption, ul, li, h1 {
   text-align: inherit;
 }
 
+html {
+  background: bisque;
+}
+
 ul {
   list-style: none
 }
