@@ -1,0 +1,16 @@
+ul {
+  list-style: none;
+  width: 348px;
+}
+
+li {
+  border: 8px solid black;
+  width: 100px;
+  height: 100px;
+  float: left;
+  background: lightgray
+}
+
+li:hover {
+  background: yellow
+}
