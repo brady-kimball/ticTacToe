@@ -1,6 +1,36 @@
+html, body, figure, figcaption, ul, li, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: inherit;
+}
+
 ul {
-  list-style: none;
+  list-style: none
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 30px;
+  font-size: 50px;
+}
+
+ul {
+  margin: 30px auto;
   width: 348px;
+  text-align: center;
 }
 
 li {
@@ -8,9 +38,48 @@ li {
   width: 100px;
   height: 100px;
   float: left;
-  background: lightgray
+  background: lightgray;
+  cursor: pointer;
 }
 
 li:hover {
-  background: yellow
+  background: yellow;
+}
+
+li.x, li.o {
+  cursor: default;
+  background: white
+}
+
+.x:after, .o:after {
+  display: block;
+  width: 100%;
+  line-height: 80px;
+  font-size: 80px;
+}
+
+.x:after {
+  content: "x";
+
+}
+
+.o:after {
+  content: "o";
+}
+
+.game-over li{
+  cursor: default;
+  background: white;
+  color: red;
+}
+
+
+figcaption {
+  font-size: 40px
+}
+
+.winner-x .x,
+.winner-o .o {
+  background: green;
+  color: white;
 }
