@@ -33,12 +33,13 @@ h1 {
 
 ul {
   margin: 30px auto;
-  width: 348px;
+  width: 330px;
   text-align: center;
+  border: 5px solid black;
 }
 
 li {
-  border: 8px solid black;
+  border: 5px solid black;
   width: 100px;
   height: 100px;
   float: left;
@@ -59,7 +60,7 @@ li.x, li.o {
   display: block;
   width: 100%;
   line-height: 80px;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .x:after {
